@@ -18,8 +18,8 @@ A primeira etapa consiste em transformar os dados brutos da API em um gráfico. 
 
 ---
 
-## 2. Estrutura do Banco de Dados (SQL)
-Os dados são processados e armazenados em um banco SQLite. Abaixo, a estrutura da tabela `precos_btc`, garantindo a integridade dos tipos de dados.
+## 2. Persistência e Integridade do Banco de Dados (SQL)
+Os dados coletados são armazenados em um banco SQLite para garantir a persistência. Abaixo, uma amostra dos primeiros registros estruturados:
 
 ![Estrutura do Banco](imagens/banco-sql.png)
 
