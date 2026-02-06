@@ -12,7 +12,7 @@ Projeto desenvolvido para análise técnica simplificada do Bitcoin nos últimos
 ---
 
 ## 1. Visualização do Gráfico
-A primeira etapa consiste em transformar os dados brutos da API em uma série temporal. O gráfico permite observar a volatilidade do ativo e identificar tendências de preço.
+A primeira etapa consiste em transformar os dados brutos da API em um gráfico. O gráfico permite observar a volatilidade do Bitcoin e identificar tendências de preço.
 
 ![Gráfico](imagens/grafico-btc.png)
 
