@@ -1,14 +1,38 @@
 # 📉 Análise de Preço: Bitcoin (BTC)
 
-Projeto desenvolvido para análise técnica simplificada do Bitcoin nos últimos 30 dias, utilizando dados em tempo real da API CoinGecko.
+Projeto desenvolvido para análise técnica simplificada do Bitcoin nos últimos 30 dias, utilizando dados em tempo real da API CoinGecko e armazenamento em banco de dados relacional (SQL).
 
-## 🚀 Tecnologias e Conceitos
-- **Python**: Lógica de programação.
-- **Pandas**: Manipulação de DataFrames e cálculos de KPIs (Mínima, Máxima e Média).
-- **Plotly**: Gráficos dinâmicos e interativos.
-- **REST API**: Consumo de dados via biblioteca `requests`.
+## 🛠️ Tecnologias Utilizadas
+* **Python**: Lógica de extração e manipulação.
+* **Pandas**: Limpeza e tratamento de dados.
+* **SQLite**: Banco de dados para consultas estruturadas.
+* **Plotly**: Visualizações interativas.
+* **CoinGecko API**: Fonte de dados em tempo real.
 
-## 📊 Destaques do Projeto
-- **Consumo Manual de API**: Realizado via parâmetros de busca (`params`).
-- **Visualização Interativa**: Gráfico de linhas com marcações de pontos diários.
-- **Resumo Executivo**: Geração automática de relatório de volatilidade no console.
+---
+
+## 1. Visualização do Gráfico
+A primeira etapa consiste em transformar os dados brutos da API em uma série temporal. O gráfico permite observar a volatilidade do ativo e identificar tendências de preço.
+
+![Gráfico](imagens/grafico-btc.png)
+
+---
+
+## 2. Estrutura do Banco de Dados (SQL)
+Os dados são processados e armazenados em um banco SQLite. Abaixo, a estrutura da tabela `precos_btc`, garantindo a integridade dos tipos de dados.
+
+![Estrutura do Banco](imagens/banco-sql.png)
+
+---
+
+## 3. Insights via SQL
+Utilizando queries estruturadas, o sistema identifica automaticamente os dias em que o Bitcoin operou abaixo da média do período, sinalizando possíveis janelas de oportunidade.
+
+![Tabela de Insights](imagens/abaixo-media-btc.png)
+
+---
+
+### 📂 Como Executar
+1. Clone o repositório.
+2. Abra o arquivo `.ipynb` no Google Colab ou Jupyter.
+3. Pressione **Ctrl + F9** ou vá em **Ambiente de Execução > Executar tudo** para executar todas as células automaticamente.
